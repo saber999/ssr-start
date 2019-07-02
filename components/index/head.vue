@@ -12,7 +12,7 @@ export default {
             hideHeadbar: false
         }
     },
-    created() {
+    mounted() {
         let userAgent = navigator.userAgent.toLowerCase()
         if( userAgent.indexOf('mucxiaoyusan') > 0 ){
             this.hideHeadbar = true;        

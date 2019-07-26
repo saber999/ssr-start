@@ -15,8 +15,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'shortcut icon', href: '//sslstatic.xiaoyusan.com/pc/images/fav.ico?t=136' },
-      { rel: 'stylesheet', type: 'text/css', href: '//sslstatic.xiaoyusan.com/h5/css/gb750.css?t=2019032500003'}
+      { rel: 'shortcut icon', href: '//sslstatic.xiaoyusan.com/pc/images/fav.ico?t=136' }
     ]
   },
   /*
@@ -27,11 +26,14 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    { src: '@/assets/css/common/common.scss', lang: 'scss'},
+    { src: 'swiper/dist/css/swiper.css'}
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: "~/plugins/vue-swiper.js", ssr: false }
   ],
   /*
   ** Nuxt.js modules
@@ -40,6 +42,7 @@ module.exports = {
     vendor: ['axios']
   },
   modules: [
+    '@nuxtjs/axios'
   ],
   /*
   ** Build configuration

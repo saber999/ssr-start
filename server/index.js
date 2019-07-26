@@ -3,7 +3,8 @@ const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 
 const app = new Koa()
-
+console.log('where反倒是')
+console.log(process.server)
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
 config.dev = !(app.env === 'production')

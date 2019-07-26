@@ -42,24 +42,27 @@ const classMap = {
 export default {
   data() {
     return {
-      consultUrl:'javascript: void(0)'
+      consultUrl:'javascript: void(0)',
+      list: Array,
     }
   },
-  components: {
-    list:Array
+  created(){
+    console.log(this.list)
   },
-  async asyncData(ctx) {
-    let list;
-    console.log(ctx)
-    await axios.post('http://dev.xinhulu.com/question/getFaqList',{}).then(res => {
-      list = res.data.data.list
+  async asyncData({store}) {
+    let list = [];
+    //坑点  这里需要用到await，如果直接在异步中返回数据，渲染的时候会拉取不到数据
+    await store.dispatch('questionInit').then(res => {
+      if(res.ret == 0 ) {
+        list = res.data.list
+      }
     });
-    console.log(list)
     return {
       list
     }
   },
   created() {
+    console.log('xuanran')
     console.log(this.list)
   },
   methods: {

@@ -1,5 +1,5 @@
 <template>
-    <section class="headbar row" v-show="!hideHeadbar" style="display: none;">
+    <section class="headbar row" v-show="!hideHeadbar">
         <div class="col"><i class="logo"></i></div>
         <i class="icon-service"></i>
         <a href="javascript:;" class="online-service" data-track="index_webCustomerSevice_new">在线客服</a>
@@ -20,7 +20,7 @@ export default {
     }
 }
 </script>
-<style>
+<style lang="scss">
     @import '@/assets/css/index/head.scss';
 </style>
 

@@ -1,0 +1,65 @@
+// reset
+html{
+	height: 100%;
+	-webkit-overflow-scrolling : touch;
+}
+body{
+	background-color: #fff;
+	margin: 0 auto;
+  color: #666;
+  font-family: sans-serif
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+input,textarea, button{ 
+	appearance: none; 
+	border: none; 
+	background: none; 
+	color: inherit; 
+	font-size: inherit;
+	font-family: inherit;
+	&::-webkit-input-placeholder{
+			color: #b3b3b3;
+	}
+}
+
+.g-section{
+	margin: 0 1.2rem;
+}
+
+h2.title{
+	font-size: 1.7rem;
+	font-weight: bold;
+  color: #333;
+  align-items: center;
+  .more{
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #929292;
+    span{
+      margin-right: 0.3rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .icon-arrow-right{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAASCAMAAABYd88+AAAAPFBMVEUAAACzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7PEAr77AAAAE3RSTlMA+fLpSOJeDdPEop57cjo0KyYbmQwhIAAAAFJJREFUCNddz1kOwCAIBFAFtPvK/e/ayrQhMn8vIcAkKXke0hdW1ekX6ZvxBlZtKRe0mfiAam4igcSUK7STjS7QyaYIH4sLfLUfje/4o7FCV+4BIy4G1yHerr0AAAAASUVORK5CYII=) no-repeat center;
+    background-size: 100% 100%;
+    vertical-align: middle;
+  }
+}
+.g-space{
+	border-bottom: 1px solid #f5f5f5;
+}
+.g-line{
+  height: 0;
+	border-top: 1px solid #f5f5f5;
+}
+.icon-arrow-right{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.9rem;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAASCAYAAABvqT8MAAABP0lEQVQokYWTPUsDQRRFz64pFRSEKPZCgr9ACcTCTwRhtrJQgzbWtha7AxZWtjaCETthptJKIcgSf8CuELCzMFhYCCuKKMRiN7KZTPCV990z7w5vxomjzgpwAkwAl8Ce0vKDAeXEUacNTOa0JrCmtHyzAS4wYmhzQOgJf2oQcGTRZ4CmJ/xpszFULDphuVRNgCWjNwpslEvVRqt1185PQGl5DNSAHwMaBxqe8Bd6gAw6B9aBTwMaBq494W8COEEQ9HQ94c8CV8CY5W5nrqkoLe+BCvBiAWp9wH/VB2SRQtLNm1V3DfMqcEt//m9gS2m5U8iZt4FToGCY3wGhtLz5i+QJfx+oW8yvwHzXDOnjOwAOLXmfgEWl5WNedOKok5AuJ18PwLLS8tk8xQUSQ2sCFZu5C+xm47+AiyyG9S8A/ALlP17AIeI8CAAAAABJRU5ErkJggg==) no-repeat center;
+	background-size: 100% 100%;
+}

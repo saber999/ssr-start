@@ -1,0 +1,22 @@
+// 合作保险公司
+.company{
+  width: 100%;
+  overflow: hidden;
+  .company-list{
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+  }
+
+  .company-item {
+    flex-shrink: 0;
+    width: 9rem;
+    margin-right: 0.8rem;
+
+    img {
+      display: block;
+      width: 9rem;
+      height: 4.8rem;
+      background: #f8f8f8;
+    }
+  }
+}

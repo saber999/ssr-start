@@ -1,0 +1,58 @@
+// 联系咨询
+.contact {
+  padding: 2.4rem 0 3rem;
+  justify-content: center;
+
+  .btn-item {
+    text-align: center;
+    line-height: 2.6rem;
+    border-radius: 12.6rem;
+    white-space: nowrap;
+    background-color: #fcfcfc;
+    border: 1px solid #f5f5f5;
+    position: relative;
+    font-size: 1.2rem;
+    margin: 0 1.2rem;
+    justify-content: center;
+    align-items: center;
+    &:first-child{
+      margin-left: 0;
+      width: 26%;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    em{
+      color: #8c7fee;
+    }
+    .icon{
+      width: 1.3rem;
+      height: 1.3rem;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-right: 0.3rem;
+    }
+    .icon-service{
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAMAAADn2eWTAAAAk1BMVEUAAAAjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBXdUfVxAAAAMHRSTlMAA/rx9TwH7Mhw0cKwpIkU5+bbqHdLRzEmIx8bDd7Ve2BXUDYPy5uVkINqKhe7VC/BCQWJAAABMUlEQVQoz42S6XaCMBCFB9lUFETZ9xa0bm3z/k/XmxhPInB6/H7AnHyBzB0gHcMBBs0QrLwFE4Qne+Sqi8U0lr0u0z0TLExTel8dkFjcHH5K1E7fiq0bR0qby02hmutcviD7CVFfSadcYykS5RZVR68MDY7KUNwgv2hMjtMOuJ8Ycyua0OIhdIkMLU2psL6iCntymmHL2y4Zs9ZH//6q4k2D1DUVTLDLdOnL0VH+HK0mEyahHpcLj3xT9oB3rRpubQQiQrpY2SMfVCftTsT6VHbNw3y8ZcNZG3P7i3ONAD9NoqzH2BnPIlGALfsQVaDsmSe0RMolytFnKkwGRIy70FuHgOd5OQHb5ZO6PkYTRSkJsJY+52EWpNBtxmfn08Qq6uEfW2c04Vs61x9oBuMBSf4A4mM4AH8YnNUAAAAASUVORK5CYII=);
+    }
+    .icon-tel{
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAMAAABVyG9ZAAAAilBMVEUAAAAjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBUjGBWxC7jBAAAALXRSTlMA+qeZJvz18EEfFQrovI5xXS7bzsm0nzsQ6teTdGlVTAbi0q1INMKFg4JiWByOQFhyAAABFElEQVQoz2WS2XKDMAxFY4c1AcIWQjYgSdP9/P/vFaFpGdP7omsfj+YisRJ5NjTpQdxSfYDo8p9EBtXnkmwSuEXPCoJ4gdaQjHdtCWuXxD68iDmA2TroA1J1tb6ZVUGv7gxXBwWgbdo7dA6CUMqwCyHYOMhgNCfSz9EN5HOOcMxXrvaQa6mHBdrBYyyFASvnrzo8nQudOphYn8g03pnUtMLS6UqD2AhUp28ZPPAUZgEf0qJPgWqrCcqtsAaB3uiuvq4vDmCvkQw0k7tAKTUHrGbK3nRqgw+TyYCHs5AIEnUWuBcz8RI4z6vGZL/T7UI46kETgLG51266VyCI5h5FBbMS96/MT3+kkW6ODlkd4peZN51+AMSmJdX7sH1dAAAAAElFTkSuQmCC);
+    }
+    &:before {
+      content: "";
+      width: 1px;
+      height: 1.8rem;
+      background-color: #f5f5f5;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(1.2rem, -50%);
+    }
+
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+// banner
+.banner{
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+	&.curve{
+		&:before{
+			content: "";
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAASCAMAAAAzDKuzAAAAmVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VHQRUAAAAMnRSTlMAIhEzd5mIRO9mVarMvDvdplvmxXBLCgT1lITQalEuHbi049avnX1gKBgT+9nCQZCOFfqtgLYAAAJnSURBVGje7dcLjqJAEIBhmqaheSkIgiCCT1AGUbn/4baaSSYTcXWTXXcQ67sByV/VhTSlWSAhNHhhRqdSA3jlbVnsu3V6CCWEBiM8pLXrx2zrVbwBUnOFb47bHaSPWx+9pgC2OCS+2x43vLkiNXfM1vOlc8oTQ0uxfdRfQZZqRpKfnOV8PWs67uR+r33bjGK/mI5IKSH0o0oymhZ+HJl2p/C/zr2Lj62l8xn/Hg9+9HzhYf8ZuLO0xrzpeGbu3c0PF/85T1xRP9496B8IRN9ukp/hCu9s8J/LvWs22XgrJ1IVHfJPM1lC6CE5SyFvXVEjZ+VtJtd99zf3Dr6ee0uHqUriLmpKZLx+3l4oE1ov3ERRGdQ9X/PmltfM/cb+ryzbZOfcLwxtlOIADBzEnY40o/DzMzNtq/rT3T2Q3Ls++BheAHN3iuEEWogRuOA/wEsKSpH2As6S+LQzl958zD+anuhN7jfxydg6wgxEquK3Q0BJhg9BX4RyRmgbtg8HN5R9tMYT3vRZv3O/7UNMgWdvHRapuZLohpiDPSnxl/gp5JLsRdWGnii5GjFna3vQdX9W9sBzvz8IG5iElSlGIYYnoYBZqCkl5CDjbfQbgXwghNIaii5gUcciaXMFTW9eNOp3yf0RDuNQWZbdzgNjqqoqiqLrumEYmqZRSveEXORhnEuhLF8I7GVK4dPgA+Ez4WPhkxlra7Ytq4Kc+318YO7/x0xMBrwU8FSI4QAOE1RBERIduAaYamBEW+RLKX8TPN6w35TkC22NNDA1gKuDRBFUgQmOCSBgWMiwkUXDswZh7ujNYe7ojfwCYf7vqWh694MAAAAASUVORK5CYII=) no-repeat center;
+			background-size: 100%;
+      position: absolute;
+      z-index: 9;
+			left: -1px;
+			bottom: -1px;
+			width: 100%;
+			height: 0;
+			padding: 0 1px 2.4%;
+			pointer-events: none;
+		}
+  }
+  .banner-list{
+    display: flex;
+  }
+  .banner-placeholder{  // banner占位避免图片无法展示显示一片空白
+    width: 100%;
+    height: 0;
+    padding-bottom: 240/750 * 100%;  // banner图尺寸：750*240
+    background: #e0ddff;
+  }
+	.banner-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+		display: block;
+		background-color: #e0ddff;
+  }
+  .banner-item{
+    position: relative;
+    width: 100%;
+    &:before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 32%;
+    }
+  }
+	.banner-dot{
+		position: absolute;
+		left: 50%;
+    bottom: 0.8rem;
+    z-index: 9;
+		transform: translate(-50%,0);
+		i{
+			width: 5px;
+			height: 5px;
+			margin: 0 3px;
+			background-color: #fff;
+			border-radius: 6px;
+      opacity: 0.8;
+			&.active{
+          opacity: 1;
+          width: 1.2rem;
+			}
+		}
+	}
+}

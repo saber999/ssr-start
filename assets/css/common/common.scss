@@ -1,0 +1,47 @@
+@charset "UTF-8";
+*{-webkit-tap-highlight-color:transparent;outline:0;margin:0;padding:0;vertical-align:baseline;box-sizing:border-box; }
+img{border:0 none;vertical-align:top}
+em,i{font-style:normal; font-size: inherit;}
+ol,ul{list-style:none}
+a{text-decoration:none;color:inherit;}
+html{font-size:10px}
+body{margin:0 auto;min-width:320px;max-width:750px;background:#FFF;font: 14px/1.5 "Helvetica Neue",Helvetica,"Microsoft Yahei",Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;line-height:1.4;color:#666;-webkit-text-size-adjust:100%!important;-webkit-user-select:none;user-select:none;background-color:#fff;line-height: 1.5}
+input[type=text],input[type=tel],textarea{-webkit-appearance:none}
+.hide{display:none!important}
+.show{display:block!important}
+.row{display: -webkit-box;display: -webkit-flex;display: flex;}
+.col{flex: 1;}
+@media only screen and (min-width:320px){html{font-size:8.533333333333333px}}
+@media only screen and (min-width:360px){html{font-size:9.6px}}
+@media only screen and (min-width:375px){html{font-size:10px}}
+@media only screen and (min-width:384px){html{font-size:10.24px}}
+@media only screen and (min-width:414px){html{font-size:11.04px}}
+@media only screen and (min-width:480px){html{font-size:12.8px}}
+@media only screen and (min-width:540px){html{font-size:14.4px}}
+@media only screen and (min-width:640px){html{font-size:17.06666666666667px}}
+@media only screen and (min-width:720px){html{font-size:19.2px}}
+@media only screen and (min-width:750px){html{font-size:20px}}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){
+  .iphonex_padding{padding-bottom: constant(safe-area-inset-bottom) !important;padding-bottom: env(safe-area-inset-bottom) !important;}
+  .iphonex_margin{margin-bottom: constant(safe-area-inset-bottom);margin-bottom:env(safe-area-inset-bottom)}
+  .iphonex_bottom{bottom:constant(safe-area-inset-bottom) !important;bottom: env(safe-area-inset-bottom) !important;;}
+  .iphonex_white{background-color:white !important;}
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3){
+  .iphonex_padding{padding-bottom: constant(safe-area-inset-bottom) !important;padding-bottom: env(safe-area-inset-bottom) !important;}
+  .iphonex_margin{margin-bottom: constant(safe-area-inset-bottom);margin-bottom:env(safe-area-inset-bottom)}
+  .iphonex_bottom{bottom:constant(safe-area-inset-bottom) !important;bottom: env(safe-area-inset-bottom) !important;;}
+  .iphonex_white{background-color:white !important;}
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2){
+  .iphonex_padding{padding-bottom: constant(safe-area-inset-bottom) !important;padding-bottom: env(safe-area-inset-bottom) !important;}
+  .iphonex_margin{margin-bottom: constant(safe-area-inset-bottom);margin-bottom:env(safe-area-inset-bottom)}
+  .iphonex_bottom{bottom:constant(safe-area-inset-bottom) !important;bottom: env(safe-area-inset-bottom) !important;;}
+  .iphonex_white{background-color:white !important;}
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2){
+  .iphonex_padding{padding-bottom: constant(safe-area-inset-bottom) !important;padding-bottom: env(safe-area-inset-bottom) !important;}
+  .iphonex_margin{margin-bottom: constant(safe-area-inset-bottom);margin-bottom:env(safe-area-inset-bottom)}
+  .iphonex_bottom{bottom:constant(safe-area-inset-bottom) !important;bottom: env(safe-area-inset-bottom) !important;;}
+  .iphonex_white{background-color:white !important;}
+}
